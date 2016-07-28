@@ -1,0 +1,6 @@
+
+<div class="form-group" ng-class="{'has-warning' : $ctrl.user.nameStatus() === 'overflow' || $ctrl.user.nameStatus() === 'undefined'}">
+	<label for="scout-name">Your Name: </label>
+	<input id= "scout-name" class="form-control" ng-model="$ctrl.user.name" name="scout-name" type="text">
+	<div class= "">{{$ctrl.user.message()}}</div>
+</div>
